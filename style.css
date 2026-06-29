@@ -1,0 +1,139 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Oswald", sans-serif;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header nav {
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        #menu-toggle {
+            display: none;
+        }
+        
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: black;
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links li {
+                padding: 15px 0;
+            }
+            #menu-toggle:checked~.nav-links {
+                display: flex;
+            }
+        }
+        
+        li:hover {
+            text-decoration: underline 2px;
+        }
+        
+        header h1,
+        header p {
+            text-align: center;
+            padding: 0 1rem;
+        }
+        
+        header h1 {
+            font-size: 4rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width:768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        header p {
+            margin-top: 2rem;
+        }
+        
+        main h2 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        @media(max-width:768px) {
+            main h2 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        main p {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        
+        main h2 {
+            font-size: 3rem;
+        }
+        
+        footer {
+            border-radius: 1rem;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }

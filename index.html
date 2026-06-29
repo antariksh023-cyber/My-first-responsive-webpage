@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Breakpoint</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        /* Mobile */
+        
+        @media (max-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+        /* Tablet */
+        
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+        }
+        /* Desktop */
+        
+        @media (min-width: 769px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resize the window to see color changes!</h1>
+</body>
+
+</html>
